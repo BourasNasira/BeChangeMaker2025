@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocuGuide - Simplify Your Document Preparation</title>
+   
+    
+    <link rel="stylesheet" href="style.css">
+ 
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h1>DocuGuide</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#procedures">Procedures</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h2>Know Exactly Which Documents You Need</h2>
+            <p>Save time and avoid mistakes with our document preparation guides for visas, internships, and administrative procedures.</p>
+            <div class="cta-buttons">
+              <a href="#procedures" class="btn btn-primary">Find My Documents</a>
+              <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="procedures" class="procedures">
+        <div class="container">
+          <h2 class="section-title">Select Your Procedure</h2>
+          <p class="section-description">Choose the administrative procedure you're preparing for:</p>
+          
+          <div class="procedure-selector">
+            <div class="procedure-cards">
+              <div class="procedure-card" data-procedure="visa">
+                <div class="card-icon">📄</div>
+                <h3>Visa Application</h3>
+                <p>Documents for tourist, student, or work visas</p>
+              </div>
+              <div class="procedure-card" data-procedure="internship">
+                <div class="card-icon">🎓</div>
+                <h3>Internship</h3>
+                <p>Required papers for internship programs</p>
+              </div>
+              <div class="procedure-card" data-procedure="employment">
+                <div class="card-icon">💼</div>
+                <h3>Employment</h3>
+                <p>Documentation for new job positions</p>
+              </div>
+              <div class="procedure-card" data-procedure="residence">
+                <div class="card-icon">🏠</div>
+                <h3>Residence Permit</h3>
+                <p>Papers needed for temporary or permanent residence</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="document-checklist" class="document-checklist hidden">
+        <div class="container">
+          <div class="checklist-header">
+            <h2 class="procedure-title">Required Documents</h2>
+            <p class="country-selection">
+              <label for="country-select">Select Country:</label>
+              <select id="country-select">
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="eu">European Union</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+              </select>
+            </p>
+          </div>
+          
+          <div class="documents-list">
+            <!-- Documents will be dynamically inserted here -->
+          </div>
+          
+          <div class="checklist-actions">
+            <button id="print-checklist" class="btn btn-secondary">Print Checklist</button>
+            <button id="save-checklist" class="btn btn-primary">Save Checklist</button>
+          </div>
+        </div>
+      </section>
+      
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About DocuGuide</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>DocuGuide simplifies the often complex and confusing process of document preparation for administrative procedures. Our platform helps you:</p>
+              <ul>
+                <li>Identify exactly which documents you need</li>
+                <li>Understand document requirements by country</li>
+                <li>Reduce errors and application rejections</li>
+                <li>Save time researching requirements</li>
+              </ul>
+            </div>
+            <div class="about-image">
+              <img src="" alt="About DocuGuide">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-description">Have questions or need specific help? Reach out to our team.</p>
+          
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>DocuGuide</h3>
+            <p>Simplifying document preparation</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Site Map</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#procedures">Procedures</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 DocuGuide. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+
+  </body>
+</html>
